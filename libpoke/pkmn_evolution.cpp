@@ -3,8 +3,8 @@
 
 namespace pkmn
 {
-	Evolution::Evolution(EEvolutionMethod method, const string &condition, shared_ptr<PokedexEntry> target)
-		:m_method(method), m_condition(condition), m_target(target)
+	Evolution::Evolution(const util::CSVParsedObj &csvobj)
+		:util::CSVConstructable(csvobj)
 	{
 
 	}

@@ -1,8 +1,6 @@
 #pragma once
 
-#include <string>
-#include <vector>
-#include <memory>
+#include "util_csv.h"
 
 namespace pkmn
 {
@@ -11,7 +9,7 @@ namespace pkmn
 
 	using namespace std;
 
-	class EggGroup
+	class EggGroup : public util::CSVConstructable
 	{
 	private:
 		// Internal id
@@ -25,7 +23,7 @@ namespace pkmn
 
 	public:
 		// Ctor
-		EggGroup(uint16_t id, const string &name);
+		EggGroup(const util::CSVParsedObj &csvobj);
 
 		// Getters
 		inline uint16_t getId(void) const { return m_id; }

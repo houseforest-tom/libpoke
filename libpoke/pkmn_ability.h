@@ -1,12 +1,12 @@
 #pragma once
 
-#include <string>
+#include "util_csv.h"
 
 namespace pkmn
 {
 	using namespace std;
 
-	class Ability
+	class Ability : public util::CSVConstructable
 	{
 	private:
 		// Internal id
@@ -20,7 +20,7 @@ namespace pkmn
 
 	public:
 		// Ctor
-		Ability(uint16_t id, const string &name, const string &desc);
+		Ability(const util::CSVParsedObj &csvobj);
 
 		// Getters
 		inline uint16_t getId(void) const { return m_id; }

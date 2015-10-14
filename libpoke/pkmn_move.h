@@ -1,6 +1,6 @@
 #pragma once
 
-#include <string>
+#include "util_csv.h"
 
 namespace pkmn
 {
@@ -17,7 +17,7 @@ namespace pkmn
 	};
 
 	// Move information
-	class Move
+	class Move : public util::CSVConstructable
 	{
 	private:
 		// Internal id
@@ -43,7 +43,7 @@ namespace pkmn
 
 	public:
 		// Ctor
-		Move(uint16_t id, const string &name, const string &desc, EMoveCategory category, uint8_t power, uint8_t acc, uint8_t pp);
+		Move(const util::CSVParsedObj &csvobj);
 
 		// Getters
 		inline uint16_t getId(void) const { return m_id; }

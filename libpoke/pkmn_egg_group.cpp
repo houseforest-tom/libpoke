@@ -2,8 +2,8 @@
 
 namespace pkmn
 {
-	EggGroup::EggGroup(uint16_t id, const string &name)
-		:m_id(id), m_name(name)
+	EggGroup::EggGroup(const util::CSVParsedObj &csvobj)
+		:util::CSVConstructable(csvobj)
 	{
 
 	}

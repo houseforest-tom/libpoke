@@ -1,6 +1,6 @@
 #pragma once
 
-#include <memory>
+#include "util_csv.h"
 #include "pkmn_move.h"
 
 namespace pkmn
@@ -16,7 +16,7 @@ namespace pkmn
 	};
 
 	// Describes how a move will be learned by a pokemon
-	class LearnMove
+	class LearnMove : public util::CSVConstructable
 	{
 	private:
 		// Move to learn
@@ -30,7 +30,7 @@ namespace pkmn
 
 	public:
 		// Ctor
-		LearnMove(shared_ptr<Move> move, ELearnMethod method, const string &condition);
+		LearnMove(const util::CSVParsedObj &csvobj);
 		
 		// Getters
 		inline shared_ptr<Move> getMove(void) { return m_move; }

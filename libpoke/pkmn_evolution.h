@@ -1,7 +1,6 @@
 #pragma once
 
-#include <string>
-#include <memory>
+#include "util_csv.h"
 
 namespace pkmn
 {
@@ -18,7 +17,7 @@ namespace pkmn
 	};
 
 	// Evolution information
-	class Evolution
+	class Evolution : public util::CSVConstructable
 	{
 	private:
 		// Method
@@ -32,7 +31,7 @@ namespace pkmn
 
 	public:
 		// Ctor
-		Evolution(EEvolutionMethod method, const string &condition, shared_ptr<PokedexEntry> targetPokemon);
+		Evolution(const util::CSVParsedObj &csvobj);
 	
 		// Getters
 		inline EEvolutionMethod getMethod(void) const { return m_method; }

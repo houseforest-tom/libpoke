@@ -125,6 +125,8 @@
     <ClInclude Include="pkmn_move.h" />
     <ClInclude Include="pkmn_pokedex_entry.h" />
     <ClInclude Include="pkmn_type.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="util_csv.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -133,6 +135,9 @@
     <ClCompile Include="pkmn_evolution.cpp" />
     <ClCompile Include="pkmn_learn_move.cpp" />
     <ClCompile Include="pkmn_move.cpp" />
+    <ClCompile Include="pkmn_pokedex_entry.cpp" />
+    <ClCompile Include="pkmn_type.cpp" />
+    <ClCompile Include="util_csv.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

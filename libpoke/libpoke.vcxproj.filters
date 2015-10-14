@@ -13,48 +13,75 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Headerdateien\pkmn">
+      <UniqueIdentifier>{2455687f-88d2-4a6b-91ab-9f3bebbb3434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\pkmn\util">
+      <UniqueIdentifier>{a6653d37-b4a4-47a3-a5d5-eba4e9802f11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\pkmn">
+      <UniqueIdentifier>{a43fbb95-4bfb-4fc1-b22d-c791709aeb5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\pkmn\util">
+      <UniqueIdentifier>{83c99eea-d1a8-495c-ac11-6b0c96c992df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pkmn_evolution.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="pkmn_pokedex_entry.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="pkmn_type.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
     <ClInclude Include="pkmn_ability.h">
-      <Filter>Headerdateien</Filter>
+      <Filter>Headerdateien\pkmn</Filter>
     </ClInclude>
     <ClInclude Include="pkmn_egg_group.h">
-      <Filter>Headerdateien</Filter>
+      <Filter>Headerdateien\pkmn</Filter>
     </ClInclude>
-    <ClInclude Include="pkmn_move.h">
-      <Filter>Headerdateien</Filter>
+    <ClInclude Include="pkmn_evolution.h">
+      <Filter>Headerdateien\pkmn</Filter>
     </ClInclude>
     <ClInclude Include="pkmn_learn_move.h">
-      <Filter>Headerdateien</Filter>
+      <Filter>Headerdateien\pkmn</Filter>
+    </ClInclude>
+    <ClInclude Include="pkmn_move.h">
+      <Filter>Headerdateien\pkmn</Filter>
+    </ClInclude>
+    <ClInclude Include="pkmn_pokedex_entry.h">
+      <Filter>Headerdateien\pkmn</Filter>
+    </ClInclude>
+    <ClInclude Include="pkmn_type.h">
+      <Filter>Headerdateien\pkmn</Filter>
+    </ClInclude>
+    <ClInclude Include="util_csv.h">
+      <Filter>Headerdateien\pkmn\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Headerdateien\pkmn\util</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pkmn_evolution.cpp">
-      <Filter>Quelldateien</Filter>
+    <ClCompile Include="pkmn_pokedex_entry.cpp">
+      <Filter>Quelldateien\pkmn</Filter>
     </ClCompile>
     <ClCompile Include="pkmn_ability.cpp">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\pkmn</Filter>
     </ClCompile>
     <ClCompile Include="pkmn_egg_group.cpp">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\pkmn</Filter>
     </ClCompile>
-    <ClCompile Include="pkmn_move.cpp">
-      <Filter>Quelldateien</Filter>
+    <ClCompile Include="pkmn_evolution.cpp">
+      <Filter>Quelldateien\pkmn</Filter>
     </ClCompile>
     <ClCompile Include="pkmn_learn_move.cpp">
-      <Filter>Quelldateien</Filter>
+      <Filter>Quelldateien\pkmn</Filter>
+    </ClCompile>
+    <ClCompile Include="pkmn_move.cpp">
+      <Filter>Quelldateien\pkmn</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="util_csv.cpp">
+      <Filter>Quelldateien\pkmn\util</Filter>
+    </ClCompile>
+    <ClCompile Include="pkmn_type.cpp">
+      <Filter>Quelldateien\pkmn</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
